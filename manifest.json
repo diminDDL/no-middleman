@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "No Middleman",
+  "version": "1.0",
+
+  "description": "Redirects you to the original source from websites such as Pinterest.",
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.pinterest.com/*"],
+      "js": ["redirects/pinterest_redirect.js"]
+    }
+  ]
+}
+
